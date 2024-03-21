@@ -1,10 +1,14 @@
 package soal
 
-import (
-	"fmt"
+import "fmt"
 
-	"github.com/Giafn/challenge2GolangMikti/utils"
-)
+func avgSlice(slice *[]float32) float32 {
+	var total float32
+	for _, value := range *slice {
+		total += value
+	}
+	return total / float32(len(*slice))
+}
 
 func SoalSatu() {
 	fmt.Println("-----Soal 1-----")
@@ -12,8 +16,8 @@ func SoalSatu() {
 	skorkoala := []float32{88, 91, 110}
 	skorlumbaLumba := []float32{96, 108, 89}
 
-	skorRataKoala := utils.AvgSlice(&skorkoala)
-	skorRataLumbaLumba := utils.AvgSlice(&skorlumbaLumba)
+	skorRataKoala := avgSlice(&skorkoala)
+	skorRataLumbaLumba := avgSlice(&skorlumbaLumba)
 
 	// print average score each team (2 decimal)
 	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
@@ -34,8 +38,8 @@ func SoalSatu() {
 	skorkoala = []float32{109, 95, 123}
 	skorlumbaLumba = []float32{97, 112, 101}
 
-	skorRataKoala = utils.AvgSlice(&skorkoala)
-	skorRataLumbaLumba = utils.AvgSlice(&skorlumbaLumba)
+	skorRataKoala = avgSlice(&skorkoala)
+	skorRataLumbaLumba = avgSlice(&skorlumbaLumba)
 
 	// print average score each team (2 decimal) minimal score 100
 	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
@@ -58,8 +62,8 @@ func SoalSatu() {
 	skorkoala = []float32{109, 95, 106}
 	skorlumbaLumba = []float32{97, 112, 101}
 
-	skorRataKoala = utils.AvgSlice(&skorkoala)
-	skorRataLumbaLumba = utils.AvgSlice(&skorlumbaLumba)
+	skorRataKoala = avgSlice(&skorkoala)
+	skorRataLumbaLumba = avgSlice(&skorlumbaLumba)
 
 	// print average score each team (2 decimal) minimal score 100
 	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
