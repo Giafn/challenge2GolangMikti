@@ -59,7 +59,7 @@ Anda dapat menggunakan proyek ini dengan mengikuti langkah-langkah berikut:
 ##### 1. Pastikan Anda memiliki Golang yang terinstal di komputer Anda.
     
 ##### 2. Clone repositori ini ke komputer Anda dengan.
-    >`git clone https://github.com/Giafn/challenge2GolangMikti.git`
+    git clone https://github.com/Giafn/challenge2GolangMikti.git
 ##### 3. Jalankan perintah `go run main.go` di dalam direktori proyek untuk menjalankan program.
 
 ## Demo
