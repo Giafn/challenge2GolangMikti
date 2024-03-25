@@ -1,8 +1,6 @@
 package soal
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // function to calculate BMI with parameter weight and height (pointer) return BMI
 func calculateBMI(weight, height *float32) float32 {
