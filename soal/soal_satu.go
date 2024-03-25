@@ -13,21 +13,21 @@ func avgSlice(slice *[]float32) float32 {
 func SoalSatu() {
 	fmt.Println("-----Soal 1-----")
 
-	skorkoala := []float32{88, 91, 110}
-	skorlumbaLumba := []float32{96, 108, 89}
+	scoreKoala := []float32{88, 91, 110}
+	scoreLumbaLumba := []float32{96, 108, 89}
 
-	skorRataKoala := avgSlice(&skorkoala)
-	skorRataLumbaLumba := avgSlice(&skorlumbaLumba)
+	avgScoreKoala := avgSlice(&scoreKoala)
+	avgScoreLumbaLumba := avgSlice(&scoreLumbaLumba)
 
 	// print average score each team (2 decimal)
-	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
-	fmt.Printf("Rata-rata skor lumba-lumba: %.2f\n", skorRataLumbaLumba)
+	fmt.Printf("Rata-rata score koala: %.2f\n", avgScoreKoala)
+	fmt.Printf("Rata-rata score lumba-lumba: %.2f\n", avgScoreLumbaLumba)
 
 	fmt.Print("Hasilnya : ")
 	// compare average score each team
-	if skorRataKoala == skorRataLumbaLumba {
+	if avgScoreKoala == avgScoreLumbaLumba {
 		fmt.Println("Seri")
-	} else if skorRataKoala > skorRataLumbaLumba {
+	} else if avgScoreKoala > avgScoreLumbaLumba {
 		fmt.Println("Koala menang")
 	} else {
 		fmt.Println("Lumba-lumba menang")
@@ -35,23 +35,23 @@ func SoalSatu() {
 
 	fmt.Println("-----Bonus 1: -----")
 
-	skorkoala = []float32{109, 95, 123}
-	skorlumbaLumba = []float32{97, 112, 101}
+	scoreKoala = []float32{109, 95, 123}
+	scoreLumbaLumba = []float32{97, 112, 101}
 
-	skorRataKoala = avgSlice(&skorkoala)
-	skorRataLumbaLumba = avgSlice(&skorlumbaLumba)
+	avgScoreKoala = avgSlice(&scoreKoala)
+	avgScoreLumbaLumba = avgSlice(&scoreLumbaLumba)
 
 	// print average score each team (2 decimal) minimal score 100
-	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
-	fmt.Printf("Rata-rata skor lumba-lumba: %.2f\n", skorRataLumbaLumba)
+	fmt.Printf("Rata-rata score koala: %.2f\n", avgScoreKoala)
+	fmt.Printf("Rata-rata score lumba-lumba: %.2f\n", avgScoreLumbaLumba)
 
 	fmt.Print("Hasilnya : ")
 	// compare average score each team with minimal score 100
-	if skorRataKoala == skorRataLumbaLumba {
+	if avgScoreKoala == avgScoreLumbaLumba {
 		fmt.Println("Seri")
-	} else if (skorRataKoala > skorRataLumbaLumba) && (skorRataKoala >= 100) {
+	} else if (avgScoreKoala > avgScoreLumbaLumba) && (avgScoreKoala >= 100) {
 		fmt.Println("Koala menang")
-	} else if (skorRataKoala < skorRataLumbaLumba) && (skorRataLumbaLumba >= 100) {
+	} else if (avgScoreKoala < avgScoreLumbaLumba) && (avgScoreLumbaLumba >= 100) {
 		fmt.Println("Lumba-lumba menang")
 	} else {
 		fmt.Println("Tidak ada pemenang")
@@ -59,23 +59,23 @@ func SoalSatu() {
 
 	fmt.Println("-----Bonus 2: -----")
 
-	skorkoala = []float32{109, 95, 106}
-	skorlumbaLumba = []float32{97, 112, 101}
+	scoreKoala = []float32{109, 95, 106}
+	scoreLumbaLumba = []float32{97, 112, 101}
 
-	skorRataKoala = avgSlice(&skorkoala)
-	skorRataLumbaLumba = avgSlice(&skorlumbaLumba)
+	avgScoreKoala = avgSlice(&scoreKoala)
+	avgScoreLumbaLumba = avgSlice(&scoreLumbaLumba)
 
 	// print average score each team (2 decimal) minimal score 100
-	fmt.Printf("Rata-rata skor koala: %.2f\n", skorRataKoala)
-	fmt.Printf("Rata-rata skor lumba-lumba: %.2f\n", skorRataLumbaLumba)
+	fmt.Printf("Rata-rata score koala: %.2f\n", avgScoreKoala)
+	fmt.Printf("Rata-rata score lumba-lumba: %.2f\n", avgScoreLumbaLumba)
 
 	fmt.Print("Hasilnya : ")
 	// compare average score each team with minimal score 100
-	if (skorRataKoala == skorRataLumbaLumba) && (skorRataKoala >= 100) && (skorRataLumbaLumba >= 100) {
+	if (avgScoreKoala == avgScoreLumbaLumba) && (avgScoreKoala >= 100) && (avgScoreLumbaLumba >= 100) {
 		fmt.Println("Seri")
-	} else if (skorRataKoala > skorRataLumbaLumba) && (skorRataKoala >= 100) {
+	} else if (avgScoreKoala > avgScoreLumbaLumba) && (avgScoreKoala >= 100) {
 		fmt.Println("Koala menang")
-	} else if (skorRataKoala < skorRataLumbaLumba) && (skorRataLumbaLumba >= 100) {
+	} else if (avgScoreKoala < avgScoreLumbaLumba) && (avgScoreLumbaLumba >= 100) {
 		fmt.Println("Lumba-lumba menang")
 	} else {
 		fmt.Println("Tidak ada pemenang")
